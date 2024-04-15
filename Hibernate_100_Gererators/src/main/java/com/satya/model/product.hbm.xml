@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+  <class name="com.satya.model.Product" table="product">
+  <id name="id" column="p_Id">
+  <generator class="uuid2"/>
+  <!-- <param name="table">HB_HELO</param>
+  <param name="column">HB_LO</param>
+  <param name="MAX_LO">10</param>
+  </generator> -->
+  </id>
+  <property name="p_name" column="prod_name"></property>
+  <property name="type" column="type"></property>
+  <property name="prize" column="prize"></property>
+  </class>
+
+
+</hibernate-mapping> 
+    
